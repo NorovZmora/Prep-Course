@@ -67,6 +67,22 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  switch(color) {
+    case "blue":
+      return "This is blue"
+      break;
+    case "red":
+      return "This is red"
+      break;
+    case "green":
+      return "This is green"
+      break;
+    case "orange":
+      return "This is orange"
+    default:
+      return "Color not found"
+
+  }
 }
 
 function esDiezOCinco(numero) {
@@ -107,6 +123,15 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  if (numero % 3 === 0) {
+    return "fizz"
+  }else if (numero % 5 === 0) {
+    return "buzz"
+  }else if (numero % 3 === 0 && numero % 5 === 0) {
+    return "fizzbuzz"
+  }else {
+    return numero
+  }
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -130,6 +155,11 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
+  if (valor === true) {
+    return "Soy verdadero"
+  }else if (valor === false) {
+    return "Soy falso"
+  }
 
 }
 
@@ -143,6 +173,11 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+  if (numero.length === 3) {
+    return true 
+  }else {
+    return false
+  }
   
 }
 
